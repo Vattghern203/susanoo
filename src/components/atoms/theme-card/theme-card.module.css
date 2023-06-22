@@ -1,0 +1,51 @@
+article {
+    width: clamp(33.3333%, 30vw, 50vw);
+    border-radius: 1.25rem;
+    color: white;
+    padding: 2rem;
+    background-color: grey;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+article * {
+    transition: all .8s ease-in-out;
+}
+
+article h2 {
+    margin-left: 2em;
+    font-size: 1.6em;
+}
+
+article span {
+    display: block;
+    border-radius: 50%;
+    background-color: blue;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(1.65rem, -1.35em);
+    z-index: 1;
+}
+
+article div > img {
+    width: 4em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-.8em, .8em);
+    z-index: 2;
+}
+
+article:hover span {
+    transform: scale(200);
+}
+
+article:hover img {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
