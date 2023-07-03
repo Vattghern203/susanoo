@@ -1,7 +1,7 @@
 import React from 'react'
 import './cta-btn.module.css'
 
-export default function CTABtn(props) {
+export default function CTABtn({ btnTxt, onClickFn }, props) {
   return (
     <button
       style={{
@@ -9,8 +9,10 @@ export default function CTABtn(props) {
         color: props.txtColor
       }}
 
+      onClick={onClickFn || undefined}
+
     >
-        {props.name}
+        {btnTxt}
     </button>
   )
 }

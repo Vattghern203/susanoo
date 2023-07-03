@@ -19,7 +19,9 @@ function App() {
 
       <br />
   
-      <CTABtn name="fernamdo" />
+      <CTABtn
+        btnTxt={`click me`}
+      />
 
     </div>
   )
